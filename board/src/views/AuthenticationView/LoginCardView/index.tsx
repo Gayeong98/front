@@ -3,11 +3,14 @@ import { Box, TextField, Typography, FormControl, InputLabel, Input, InputAdornm
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Visibility from '@mui/icons-material/Visibility';
 
+import { useSignUpStore } from 'src/stores';
+
 interface Props {
     setLoginView: Dispatch<SetStateAction<boolean>>
 }
 
 export default function LoginCardView({ setLoginView }: Props) {
+
 
   const [showPassword, setShowPassword] = useState<boolean>(false);
 

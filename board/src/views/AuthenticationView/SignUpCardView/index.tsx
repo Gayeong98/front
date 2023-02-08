@@ -184,7 +184,7 @@ export default function SignUpCardView({ setLoginView }: Props) {
             variant="contained"
             size="large"
             sx={{ mb: "20px" }}
-            onClick={() => setPage(1)}
+            onClick={onSignUpHandler}
           >
             회원가입
           </Button>

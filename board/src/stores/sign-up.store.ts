@@ -5,7 +5,7 @@
 
 //# Zustand를 사용하여 스토어 생성
 //^ Zustand에서 create 요소를 import
-import { create } from "zustand/react";
+import { create } from "zustand";
 
 //# Typescript에서 함수의 타입을 지정하는 방법
 //? (매개변수명: 매개변수타입) => 반환타입 

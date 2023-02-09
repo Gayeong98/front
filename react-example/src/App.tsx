@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import './App.css';
 import MenuAppBar from "./components/MenuAppBar";
 import Es6Typescript from "./views/Es6Typescript";
+import JsxTsx from "./views/JsxTsx";
 
 export default function App() {
   const [view, setView] = useState<string>("");
@@ -27,7 +28,8 @@ export default function App() {
         */}
         { view === 'naverSignIn' ? (<NaverSignIn />) : 
           view === 'kakaoSignIn' ? (<KakaoSignIn />) : 
-          view === 'es6Typescript' ? (<Es6Typescript/>) : (<></>)}
+          view === 'es6Typescript' ? (<Es6Typescript/>) : 
+          view === 'jsxTsx' ? (<JsxTsx/>) : (<></>)}
       </div>
     </div>
   );

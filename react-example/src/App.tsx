@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 import './App.css';
 import MenuAppBar from "./components/MenuAppBar";
+import Es6Typescript from "./views/Es6Typescript";
 
 export default function App() {
   const [view, setView] = useState<string>("");
@@ -25,7 +26,8 @@ export default function App() {
          //^ <></> : 아무런 의미가 없는 빈 태그
         */}
         { view === 'naverSignIn' ? (<NaverSignIn />) : 
-          view === 'kakaoSignIn' ? (<KakaoSignIn />) : (<></>)}
+          view === 'kakaoSignIn' ? (<KakaoSignIn />) : 
+          view === 'es6Typescript' ? (<Es6Typescript/>) : (<></>)}
       </div>
     </div>
   );

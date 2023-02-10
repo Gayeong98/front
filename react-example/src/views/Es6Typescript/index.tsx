@@ -178,6 +178,18 @@ export default function Es6Typescript() {
     state = { ...state, email : "이메일"};
     console.log(state);
 
+    //# 9. Enum
+    //? Enumerated Type: 열거형 타입
+    enum ENUMERATED {
+        APPLE = 'apple',
+        BANANA = 'banana',
+        CARROT = 'carrot',
+    }
+
+    const fruit = ENUMERATED.APPLE;
+    console.log(fruit);
+    let fruit2: ENUMERATED = ENUMERATED.APPLE;
+
   return (
     <div>index</div>
   )

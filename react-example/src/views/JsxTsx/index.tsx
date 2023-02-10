@@ -43,6 +43,8 @@ export default function JsxTsx() {
     //? 모든 태그를 다 닫아 주어야 하고 모든 html 요소를 소문자로 작성
     //? html 속성이 대소문자를 구분
 
+    const TRUE_TEXT = 'true';
+
   return (
     <div>
         { trueFlag && (<div>true</div>) }

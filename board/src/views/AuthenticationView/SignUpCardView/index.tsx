@@ -94,6 +94,7 @@ interface Props {
 }
 
 export default function SignUpCardView({ setLoginView }: Props) {
+  
   const [page, setPage] = useState<number>(1);
 
   const { email, password, passwordCheck } = useSignUpStore();

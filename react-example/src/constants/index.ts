@@ -23,29 +23,29 @@ export const PHONE = '01011111111';
 export default AGE;
 // export default BIRTH;
 
-export const PAGES = [{
-    title: 'Naver',
-    viewValue: VIEW.NAVER
-},
-{
-    title: 'Kakao',
-    viewValue: VIEW.KAKAO
-},
-{
-    title: 'ES6 + Typescript',
-    viewValue: VIEW.TYPESCRIPT
-},
-{
-    title: 'JSX + TSX',
-    viewValue: VIEW.TSX
-},
-{
-    title: 'HOOK',
-    viewValue: VIEW.HOOK
-},
-{
-    title: 'MUI',
-    viewValue: VIEW.MUI
-}
-
+export const PAGES = [
+    {
+        title: 'Naver',
+        viewValue: VIEW.NAVER,
+    },
+    {
+        title: 'Kakao',
+        viewValue: VIEW.KAKAO,
+    },
+    {
+        title: 'ES6 + Typescript',
+        viewValue: VIEW.TYPESCRIPT
+    },
+    {
+        title: 'JSX + TSX',
+        viewValue: VIEW.TSX
+    },
+    {
+        title: 'HOOK',
+        viewValue: VIEW.HOOK
+    },
+    {
+        title: 'MUI',
+        viewValue: VIEW.MUI
+    }
 ]

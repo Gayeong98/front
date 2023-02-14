@@ -27,7 +27,7 @@ export default function AuthenticationView() {
             </Grid>
             <Grid item lg={5} sm={12}>
                 <Card sx={{height: '630px', mt: '100px', mb: '80px', pt: '50px', pb: '30px', pl: '50px', pr: '50px'}}>
-                    {loginView ? (<LoginCardView setLoginView={setLoginView} />) : (<SignUpCardView setLoginView={setLoginView}/>)}
+                    {loginView ? (<LoginCardView setLoginView={setLoginView} />) : (<SignUpCardView setLoginView={setLoginView} />)}
                 </Card>
             </Grid>
         </Grid>

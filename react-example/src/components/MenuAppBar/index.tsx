@@ -14,8 +14,6 @@ import MenuItem from '@mui/material/MenuItem';
 import { PAGES } from 'src/constants';
 import { VIEW } from 'src/enums';
 
-
-
 interface Props {
   setView: Dispatch<SetStateAction<VIEW>>;
 }
@@ -23,7 +21,7 @@ interface Props {
 function MenuAppBar({ setView }: Props) {
   
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
-  
+
   const handleOpenNavMenu = (event: MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };

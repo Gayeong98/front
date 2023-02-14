@@ -1,7 +1,7 @@
 export enum VIEW {
     NAVER = 'naverSignIn',
     KAKAO = 'kakaoSignIn',
-    TYPESCRIPT = 'typeScript',
+    TYPESCRIPT = 'typescript',
     TSX = 'tsx',
     HOOK = 'hook',
     MUI = 'mui',

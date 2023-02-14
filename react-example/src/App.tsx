@@ -2,21 +2,23 @@ import { useState } from "react";
 import KakaoSignIn from "./views/KakaoSignIn";
 import NaverSignIn from "./views/NaverSignIn";
 
-import { Link } from "react-router-dom";
+import { Link, Route, Router, Routes } from "react-router-dom";
 
 import './App.css';
 import MenuAppBar from "./components/MenuAppBar";
-import Es6Typescript from "./views/Es6TypeScript";
+import Es6Typescript from "./views/Es6Typescript";
 import JsxTsx from "./views/JsxTsx";
 import { VIEW } from "./enums";
 import Hook from "./views/Hook";
 import Mui from "./views/Mui";
+import RouterView from "./views/RouterView";
+import { Typography } from "@mui/material";
 
 export default function App() {
   const [view, setView] = useState<VIEW>(VIEW.NAVER);
   return (
     <div>
-      <MenuAppBar setView={setView} />
+      <MenuAppBar/>
       <div>
         {/* {view === 'naverSignIn' && (<NaverSignIn />)} */}
         {/*
@@ -29,12 +31,24 @@ export default function App() {
         {/*
          //^ <></> : 아무런 의미가 없는 빈 태그
         */}
-        { view === VIEW.NAVER ? (<NaverSignIn />) : 
+        <Routes>
+          <Route path={VIEW.NAVER} element={(<NaverSignIn />)} />
+          <Route path={VIEW.KAKAO} element={(<KakaoSignIn />)} />
+          <Route path={VIEW.TYPESCRIPT} element={(<Es6Typescript />)} />
+          <Route path={VIEW.TSX} element={(<JsxTsx />)} />
+          <Route path={VIEW.HOOK} element={(<Hook />)} />
+          <Route path={VIEW.MUI} element={(<Mui />)} />
+          <Route path={VIEW.ROUTER} element={(<RouterView />)} />
+          <Route path="*" element={(<Typography variant="h3">404</Typography>)} />
+        </Routes>
+        { /*(view === VIEW.NAVER ? (<NaverSignIn />) : 
           view === VIEW.KAKAO ? (<KakaoSignIn />) : 
           view === VIEW.TYPESCRIPT ? (<Es6Typescript />) : 
           view === VIEW.TSX ? (<JsxTsx />) : 
           view === VIEW.HOOK ? (<Hook />) : 
-          view === VIEW.MUI ? (<Mui />) : (<></>)}
+          view === VIEW.MUI ? (<Mui />) : 
+          view === VIEW.ROUTER ? (<RouterView/>) : (<></>)
+         */}
       </div>
     </div>
   );

@@ -38,7 +38,7 @@ export default function App() {
           <Route path={VIEW.TSX} element={(<JsxTsx />)} />
           <Route path={VIEW.HOOK} element={(<Hook />)} />
           <Route path={VIEW.MUI} element={(<Mui />)} />
-          <Route path={VIEW.ROUTER} element={(<RouterView />)} />
+          <Route path={'router/:pathValue'} element={(<RouterView />)} />
           <Route path="*" element={(<Typography variant="h3">404</Typography>)} />
         </Routes>
         { /*(view === VIEW.NAVER ? (<NaverSignIn />) : 

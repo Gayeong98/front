@@ -13,12 +13,13 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { PAGES } from 'src/constants';
 import { VIEW } from 'src/enums';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 function MenuAppBar() {
   
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
+  const navigator = useNavigate();
 
   const handleOpenNavMenu = (event: MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -117,7 +118,7 @@ function MenuAppBar() {
               <Button
                 key={page.title}
                 sx={{ my: 2, color: 'white', display: 'block' }}
-                onClick={() => alert('button!')}
+                onClick={() => navigator(page.viewValue)}
               >
                 {page.title}
               </Button>

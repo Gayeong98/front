@@ -1,6 +1,6 @@
 import { Button, TextField, Typography } from '@mui/material'
 import React, { useState } from 'react'
-import { Link, Route, Routes, useNavigate } from 'react-router-dom'
+import { Link, Route, Routes, useNavigate, useParams } from 'react-router-dom'
 
 //# Router
 //? Server의 Resource 경로를 추적하고 있다가 해당 경로가 바뀌면
@@ -23,25 +23,40 @@ import { Link, Route, Routes, useNavigate } from 'react-router-dom'
 //? const 내비게이터 함수명 = useNavigate();
 //? 내비게이터함수명(path);
 
+//? Resource Path를 변경시키기 전에 특정 작업하고자 할 때 사용됨
+
+//^ useParam Hook 함수
+//? Resource Path로부터 특정 값을 가져올 때 사용
+//? import { useParam } from 'react-router-dom';
+
+//? const { pathVariable명 } = useParams();
+
 export default function RouterView() {
 
-  const  [path, setPath ] = useState<string>(''); 
+  const  [path, setPath] = useState<string>(''); 
   const navigator = useNavigate();
 
+  const { pathValue } = useParams(); 
+
   const movePath = () => {
-    console.log();
-    navigator(path);
+    console.log(path);
+    //^ navigate hook 및 Link의 path 자리에
+    //^ '/'가 붙지 않으면 현재 path 뒤에 '/'가 붙고
+    //^ 경로가 추가되어 변경됨
+    if (path !== '' && path !== 'main')
+      navigator('/' + path);
   }
 
   return (
     <>
+    <Typography variant='h3'>{pathValue}</Typography>
       <Routes>
         <Route path='test' element={(<Typography variant='h3'>Test Page</Typography>)}></Route>
       </Routes>
       <Link to='test'>test</Link> {' '}
       <Link to = ''>main</Link>
       <TextField variant='filled' label='path' onChange={(event) => setPath(event.target.value)}/>
-      <Button variant='contained'>move!</Button>
+      <Button variant='contained' onClick={movePath}>move!</Button>
     </>
   )
 }

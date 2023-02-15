@@ -8,6 +8,8 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import { Button } from '@mui/material';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -52,6 +54,12 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function NavigationBar() {
+
+  const navigator = useNavigate();
+  const path = useLocation();
+
+  console.log(path.pathname);
+
   return (
     <Box sx={{ flexGrow: 1, pr: "120px", pl: "120px" }}>
       <AppBar position="static">
@@ -59,14 +67,18 @@ export default function NavigationBar() {
           <Typography
             variant="h6"
             noWrap
-            component="div"
+            component="a"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            onClick={() => navigator('/')}
           >
             Hoons Board
           </Typography>
-          <IconButton color={"default"}>
-            <SearchIcon />
-          </IconButton>
+          <Box>
+            <IconButton color={"default"}>
+              <SearchIcon />
+            </IconButton>
+            {path.pathname !== '/auth' && <Button variant='contained' color='secondary' onClick={() => navigator('/auth')}>로그인</Button>}
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>

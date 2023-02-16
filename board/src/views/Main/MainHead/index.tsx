@@ -14,7 +14,7 @@ export default function MainHead() {
     }, [])
 
   return (
-    <Box sx={{pb: '40px'}}>
+    <Box sx={{ pb: '40px', pl: '120px', pr: '120px' }}>
         {/* 점보트론 텍스트 */}
         <Box sx={{pt: '80px', pb: '32px', textAlign: 'center' }}>
             <Typography sx={{ fontSize: '40px', fontWeight: 400}}>Hoons Board에서</Typography>

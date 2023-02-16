@@ -5,7 +5,7 @@ import MainHead from './MainHead'
 
 export default function Main() {
   return (
-    <Box sx={{pl: '120px', pr: '120px'}}>
+    <Box>
         <MainHead />
         <MainContents />
     </Box>

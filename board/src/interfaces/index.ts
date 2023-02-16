@@ -1,5 +1,5 @@
-export interface IPriviewItem {
-    img: string;
+export interface IPreviewItem {
+    img: string | null;
     writerProfile: string;
     writerNickname: string;
     writeDate: string;

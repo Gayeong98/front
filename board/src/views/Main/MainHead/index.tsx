@@ -1,13 +1,13 @@
 import { Box, Card, Grid, Typography } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import PreviewCard from 'src/components/PreviewCard'
-import { IPriviewItem } from 'src/interfaces';
+import { IPreviewItem } from 'src/interfaces';
 
 import { TOP3 } from 'src/mock';
 
 export default function MainHead() {
 
-    const [top3List, setTop3List] = useState<IPriviewItem[]>([]);
+    const [top3List, setTop3List] = useState<IPreviewItem[]>([]);
 
     useEffect(() => {
         setTop3List(TOP3);

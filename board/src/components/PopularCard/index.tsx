@@ -21,7 +21,7 @@ export default function PopularCard({ title }: Props) {
         <Typography sx={{ fontSize: '24px', fontWeight: 500 }}>{title}</Typography>
         <Box sx={{ mt: '24px' }}>
           {popularList.map((popular) => (
-          <Chip sx={{ mr: '12px', mb: '12px', fontSize: '14px', fontWeight: 500}} label= {popular} variant='outlined' onClick={(event) => navigator(`/search${popular}`)} />
+          <Chip sx={{ mr: '12px', mb: '12px', fontSize: '14px', fontWeight: 500}} label= {popular} variant='outlined' onClick={() => navigator(`/board/search/${popular}`)} />
           ))}
         </Box>
     </Card>

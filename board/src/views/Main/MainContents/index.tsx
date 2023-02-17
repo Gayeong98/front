@@ -62,7 +62,7 @@ export default function MainContents() {
             </Grid>
         </Box>
         <Box sx={{ display: 'flex', justifyContent: 'center'}}>
-            <Pagination page={pageNumber} count={Math.floor(boardList.length / COUNT)} onChange={(event, value) => onPageHandler(value)}/>
+            <Pagination page={pageNumber} count={Math.floor(boardList.length / COUNT + 1)} onChange={(event, value) => onPageHandler(value)} />
         </Box>
     </Box>
   )

@@ -3,45 +3,45 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import BoardListItem from 'src/components/BoardListItem';
 import PopularCard from 'src/components/PopularCard'
+import usePagingHook from 'src/hooks/paging.hook';
 import { IPreviewItem } from 'src/interfaces';
 import { BOARD_LIST } from 'src/mock';
+import { getPageCount } from 'src/utils';
 
 export default function SearchView() {
 
-    const COUNT = 5;
-
-    const [boardList, setBoardList] = useState<IPreviewItem[]>([]);
-    const [viewList, setViewList] = useState<IPreviewItem[]>([]);
-    const [pageNumber, setPageNumber] = useState<number>(1);
     const { content } = useParams();
+    const { boardList, viewList, pageNumber, onPageHandler, COUNT } = usePagingHook(content as string);
 
-    const onPageHandler = (page: number) => {
-        setPageNumber(page);
+    // const COUNT = 5;
 
-        const tmpList: IPreviewItem[] = [];
-        const startIndex = COUNT * (page - 1);
-        const endIndex = COUNT * page - 1;
+    // const [boardList, setBoardList] = useState<IPreviewItem[]>([]);
+    // const [viewList, setViewList] = useState<IPreviewItem[]>([]);
+    // const [pageNumber, setPageNumber] = useState<number>(1);
 
-        for (let index = startIndex; index <= endIndex; index++) {
-            if (boardList.length < index + 1) break;
-            tmpList.push(boardList[index]);
-        }
+    // const onPageHandler = (page: number) => {
+    //     setPageNumber(page);
 
-        setViewList(tmpList);
-    }
+    //     const tmpList: IPreviewItem[] = [];
+    //     const startIndex = COUNT * (page - 1);
+    //     const endIndex = COUNT * page - 1;
 
-    useEffect(() => {
-        //# array.filter(요소 => 조건)
-        //? 특정한 조건에 부합하는 요소만 모아서 새로운 배열로 만들어 반환하는 메서드
-        //# string.inclues(검색할 문자열)
-        //? 해당 문자열에서 검색할 문자열이 존재한다면 true, 아니면 false를 반환하는 메서드
-        const tmp = BOARD_LIST.filter((board) => board.boardTitle.includes(content as string))
-        setBoardList(tmp);
-    }, [])
+    //     for (let index = startIndex; index <= endIndex; index++) {
+    //         if (boardList.length < index + 1) break;
+    //         tmpList.push(boardList[index]);
+    //     }
 
-    useEffect(() => {
-        onPageHandler(pageNumber)
-    }, [boardList])
+    //     setViewList(tmpList);
+    // }
+
+    // useEffect(() => {
+    //     const tmp = BOARD_LIST.filter((board) => board.boardTitle.includes(content as string))
+    //     setBoardList(tmp);
+    // }, [])
+
+    // useEffect(() => {
+    //     onPageHandler(pageNumber)
+    // }, [boardList])
     
   return (
     <Box sx={{ p: '40px 120px', backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
@@ -63,7 +63,7 @@ export default function SearchView() {
             </Grid>
         </Box>
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-            <Pagination page={pageNumber} count={Math.floor((boardList.length-1) / 5) + 1} onChange={(event, value) => {onPageHandler(value)}} />
+            <Pagination page={pageNumber} count={getPageCount(boardList, COUNT)} onChange={(event, value) => {onPageHandler(value)}} />
         </Box>
     </Box>
   )

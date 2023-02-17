@@ -38,7 +38,10 @@ const usePagingHook = (content?: string) => {
         const tmp = !content ? BOARD_LIST : BOARD_LIST.filter((board) => board.boardTitle.includes(content as string))
         setBoardList(tmp);
 
-    }, []);
+        //? SELECT * FROM Board ORDER BY writeDate DESC;
+        //? SELECT * FROM WHERE boardTitle LIKE '%content%' ORDER BY writeDate DESC;
+
+    }, [content]);
 
     useEffect(() => {
         onPageHandler(pageNumber);

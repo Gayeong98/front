@@ -1,14 +1,17 @@
 import { Box, Grid, Pagination, Typography, Stack } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import BoardListItem from 'src/components/BoardListItem';
 import PopularCard from 'src/components/PopularCard'
 import { IPreviewItem } from 'src/interfaces';
 import { BOARD_LIST } from 'src/mock';
 
 export default function SearchView() {
 
+    const COUNT = 5;
+
     const [boardList, setBoardList] = useState<IPreviewItem[]>([]);
-    const [view, viewList] = useState<IPreviewItem[]>([]);
+    const [viewList, setViewList] = useState<IPreviewItem[]>([]);
     const [pageNumber, setPageNumber] = useState<number>(1);
     const { content } = useParams();
 
@@ -16,8 +19,15 @@ export default function SearchView() {
         setPageNumber(page);
 
         const tmpList: IPreviewItem[] = [];
-        const startIndex = ;
-        const endIndex = ;
+        const startIndex = COUNT * (page - 1);
+        const endIndex = COUNT * page - 1;
+
+        for (let index = startIndex; index <= endIndex; index++) {
+            if (boardList.length < index + 1) break;
+            tmpList.push(boardList[index]);
+        }
+
+        setViewList(tmpList);
     }
 
     useEffect(() => {
@@ -30,7 +40,7 @@ export default function SearchView() {
     }, [])
 
     useEffect(() => {
-        console.log(boardList)
+        onPageHandler(pageNumber)
     }, [boardList])
     
   return (
@@ -44,7 +54,7 @@ export default function SearchView() {
             <Grid container spacing={3}>
                 <Grid item sm={12} md={8}>
                     <Stack spacing={2}>
-
+                        {viewList.map((boardItem) => (<BoardListItem item={boardItem}/>))}
                     </Stack>
                 </Grid>
                 <Grid item sm={12} md={4}>
@@ -53,7 +63,7 @@ export default function SearchView() {
             </Grid>
         </Box>
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-            <Pagination page={pageNumber} count={10} onChange={(event, value) => {onPageHandler(value)}} />
+            <Pagination page={pageNumber} count={Math.floor((boardList.length-1) / 5) + 1} onChange={(event, value) => {onPageHandler(value)}} />
         </Box>
     </Box>
   )

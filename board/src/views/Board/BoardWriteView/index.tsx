@@ -1,7 +1,34 @@
-import React from 'react'
+import { Box, Divider, Fab, IconButton, Input } from '@mui/material'
+import ImageOutlinedIcon from '@mui/icons-material/ImageOutlined';
+import CreateIcon from '@mui/icons-material/Create';
+import React, { useState } from 'react'
 
 export default function BoardWriteView() {
+
+  const [ boardTitle, setBoardTitle ] = useState<string>('');
+  const [ boardContent, setBoardContent ] = useState<String>('');
+
+  const onWriteHandler = () => {
+    //? 제목 및 내용 검증(값이 존재하는지)
+
+    //? 존재한다면 작성 기능 활성화
+  }
+
   return (
-    <div>BoardWriteView</div>
+    <Box sx={{ p: '0px 120px', backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+      <Box sx={{ p: '100px 24px', backgroundColor: '#ffffff' }}>
+        <Input fullWidth placeholder='제목을 입력하세요.' disableUnderline sx={{fontSize: '32px', fontWeight: 500}} onChange={(event) => setBoardTitle(event.target.value) } />
+        <Divider sx={{m: '48px 0px'}}/>
+        <Box sx={{ display: 'flex', alignItems: 'start'}} >
+          <Input fullWidth disableUnderline multiline minRows={20} placeholder='본문을 작성해주세요.' sx={{fontSize: '18px', fontWeight: 500, lineHeight: '150%' }} onChange={(event) => setBoardContent(event.target.value)} />
+          <IconButton>
+            <ImageOutlinedIcon />
+          </IconButton>
+        </Box>
+      </Box>
+      <Fab sx={{ position: 'fixed', right: '', bottom: '200px', backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+        <CreateIcon />
+      </Fab>
+    </Box>
   )
 }

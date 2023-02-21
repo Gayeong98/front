@@ -19,6 +19,23 @@ export default function BoardWriteView() {
     }
 
     //? 존재한다면 작성 기능 활성화
+    //# User Table
+    //^ userEmail VARCHAR(45) PRIMARY KEY;
+
+    //# Board table
+    //^ boardNumber INT AI PRIMARY KEY;
+    //^ boardTitle TEXT NOT NULL;
+    //^ boardContent TEXT NOT NULL;
+    //^ writeDate DATETIME NOT NULL;
+    //^ writerEmail VARCHAR(45) FOREIGN KEY NOT NULL;
+    //^ likeCount INT default 0;
+    //^ commentCount INT default 0;
+    //^ viewCount INT default 0;
+
+    //? INSERT INTO (boardTitle, boardContent, writeDate, writerEmail)
+    //? VALUES (?, ?, now(), ?)
+    
+    //? Back end로 boardTitle, boardContent, writerEmail을 넘겨주면 됨
     navigator('/myPage');
 
   }

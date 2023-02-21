@@ -16,7 +16,7 @@ export const TOP3: IPreviewItem[] = [
     {
         img: '',
         writerProfile: '',
-        writerNickname: '작성자2',
+        writerNickname: 'Gayeong98',
         writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
@@ -55,7 +55,7 @@ export const BOARD_LIST: IPreviewItem[] = [
     {
         img: '',
         writerProfile: '',
-        writerNickname: '작성자2',
+        writerNickname: 'Gayeong98',
         writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
@@ -90,7 +90,7 @@ export const BOARD_LIST: IPreviewItem[] = [
     {
         img: '',
         writerProfile: '',
-        writerNickname: '작성자2',
+        writerNickname: 'Gayeong98',
         writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
@@ -125,7 +125,7 @@ export const BOARD_LIST: IPreviewItem[] = [
     {
         img: '',
         writerProfile: '',
-        writerNickname: '작성자2',
+        writerNickname: 'Gayeong98',
         writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
@@ -160,7 +160,7 @@ export const BOARD_LIST: IPreviewItem[] = [
     {
         img: '',
         writerProfile: '',
-        writerNickname: '작성자2',
+        writerNickname: 'Gayeong98',
         writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
@@ -195,7 +195,7 @@ export const BOARD_LIST: IPreviewItem[] = [
     {
         img: '',
         writerProfile: '',
-        writerNickname: '작성자2',
+        writerNickname: 'Gayeong98',
         writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
@@ -230,7 +230,7 @@ export const BOARD_LIST: IPreviewItem[] = [
     {
         img: '',
         writerProfile: '',
-        writerNickname: '작성자2',
+        writerNickname: 'Gayeong98',
         writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
@@ -265,7 +265,7 @@ export const BOARD_LIST: IPreviewItem[] = [
     {
         img: '',
         writerProfile: '',
-        writerNickname: '작성자2',
+        writerNickname: 'Gayeong98',
         writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
@@ -300,7 +300,7 @@ export const BOARD_LIST: IPreviewItem[] = [
     {
         img: '',
         writerProfile: '',
-        writerNickname: '작성자2',
+        writerNickname: 'Gayeong98',
         writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
@@ -335,7 +335,7 @@ export const BOARD_LIST: IPreviewItem[] = [
     {
         img: '',
         writerProfile: '',
-        writerNickname: '작성자2',
+        writerNickname: 'Gayeong98',
         writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
@@ -370,7 +370,7 @@ export const BOARD_LIST: IPreviewItem[] = [
     {
         img: '',
         writerProfile: '',
-        writerNickname: '작성자2',
+        writerNickname: 'Gayeong98',
         writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
@@ -406,7 +406,7 @@ export const BOARD_LIST: IPreviewItem[] = [
     {
         img: '',
         writerProfile: '',
-        writerNickname: '작성자2',
+        writerNickname: 'Gayeong98',
         writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
@@ -442,7 +442,7 @@ export const BOARD_LIST: IPreviewItem[] = [
     {
         img: '',
         writerProfile: '',
-        writerNickname: '작성자2',
+        writerNickname: 'Gayeong98',
         writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
@@ -479,9 +479,9 @@ export const POPULAR_LIST: string[] = [
 ]
 
 export const USER: IUser = {
-    email: 'qwer@qwer.com',
-    password: 'qwer1234',
-    nickname: 'jiraynor',
+    email: 'gayeong122@gmail.com',
+    password: 'gayeong98',
+    nickname: 'Gayeong98',
     telNumber: '010-1111-2222',
     address: '부산광역시 부산진구',
     addressDetail: '삼정타워',

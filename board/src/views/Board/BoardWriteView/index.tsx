@@ -2,16 +2,25 @@ import { Box, Divider, Fab, IconButton, Input } from '@mui/material'
 import ImageOutlinedIcon from '@mui/icons-material/ImageOutlined';
 import CreateIcon from '@mui/icons-material/Create';
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export default function BoardWriteView() {
 
   const [ boardTitle, setBoardTitle ] = useState<string>('');
   const [ boardContent, setBoardContent ] = useState<String>('');
 
+  const navigator = useNavigate();
+
   const onWriteHandler = () => {
     //? 제목 및 내용 검증(값이 존재하는지)
+    if (!boardTitle.trim() || !boardContent.trim()){
+      alert('모든 내용을 입력해주세요.')
+      return;
+    }
 
     //? 존재한다면 작성 기능 활성화
+    navigator('/myPage');
+
   }
 
   return (
@@ -26,7 +35,7 @@ export default function BoardWriteView() {
           </IconButton>
         </Box>
       </Box>
-      <Fab sx={{ position: 'fixed', right: '', bottom: '200px', backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+      <Fab sx={{ position: 'fixed', right: '248px', bottom: '200px', backgroundColor: 'rgba(0, 0, 0, 0.7)'}} onClick = {onWriteHandler}>
         <CreateIcon />
       </Fab>
     </Box>

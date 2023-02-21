@@ -49,7 +49,7 @@ export const PAGES = [
         viewValue: VIEW.MUI
     },
     {
-        title: 'Router',
+        title: 'ROUTER',
         viewValue: VIEW.ROUTER
     }
 ]

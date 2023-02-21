@@ -1,5 +1,4 @@
-import { Box } from '@mui/system'
-import React from 'react'
+import { Box } from '@mui/material'
 import MainContents from './MainContents'
 import MainHead from './MainHead'
 

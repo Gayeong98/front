@@ -15,7 +15,6 @@ import { PAGES } from 'src/constants';
 import { VIEW } from 'src/enums';
 import { Link, useNavigate } from 'react-router-dom';
 
-
 function MenuAppBar() {
   
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
@@ -90,7 +89,7 @@ function MenuAppBar() {
               */}
               {PAGES.map((page) => (
                 <MenuItem key={page.title}>
-                  <Link to={page.viewValue} style={{textAlign: "center"}}>{page.title}</Link>
+                  <Link to={page.viewValue} style={{ textAlign: 'center' }}>{page.title}</Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -114,7 +113,6 @@ function MenuAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {PAGES.map((page) => (
-              <Link to={page.viewValue}>
               <Button
                 key={page.title}
                 sx={{ my: 2, color: 'white', display: 'block' }}
@@ -122,14 +120,13 @@ function MenuAppBar() {
               >
                 {page.title}
               </Button>
-              </Link>
             ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton sx={{ p: 0 }}>
-                <Avatar alt="김가영" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="서지훈" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
           </Box>

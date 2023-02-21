@@ -1,11 +1,11 @@
-import { IPreviewItem } from "src/interfaces";
+import { IPreviewItem, IUser } from "src/interfaces";
 
 export const TOP3: IPreviewItem[] = [
     {
-        img: 'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/32E9/image/BA2Qyx3O2oTyEOsXe2ZtE8cRqGk.JPG',
+        img: 'http://image.dongascience.com/Photo/2022/06/6982fdc1054c503af88bdefeeb7c8fa8.jpg',
         writerProfile: '',
         writerNickname: '작성자1',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목1',
         boardContent: '게시물1 내용입니다.',
         likeCount: 10,
@@ -17,34 +17,34 @@ export const TOP3: IPreviewItem[] = [
         img: '',
         writerProfile: '',
         writerNickname: '작성자2',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 2
+        boardNumber: 1
     },
     {
         img: '',
         writerProfile: '',
         writerNickname: '작성자3',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목3',
         boardContent: '게시물3 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 3
-    }
-]
+        boardNumber: 1
+    },
+];
 
 export const BOARD_LIST: IPreviewItem[] = [
     {
-        img: 'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/32E9/image/BA2Qyx3O2oTyEOsXe2ZtE8cRqGk.JPG',
+        img: 'http://image.dongascience.com/Photo/2022/06/6982fdc1054c503af88bdefeeb7c8fa8.jpg',
         writerProfile: '',
         writerNickname: '작성자1',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목1',
         boardContent: '게시물1 내용입니다.',
         likeCount: 10,
@@ -56,31 +56,30 @@ export const BOARD_LIST: IPreviewItem[] = [
         img: '',
         writerProfile: '',
         writerNickname: '작성자2',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 2
+        boardNumber: 1
     },
     {
         img: '',
         writerProfile: '',
         writerNickname: '작성자3',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목3',
         boardContent: '게시물3 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 3
-    },
-    {
-        img: 'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/32E9/image/BA2Qyx3O2oTyEOsXe2ZtE8cRqGk.JPG',
+        boardNumber: 1
+    },{
+        img: 'http://image.dongascience.com/Photo/2022/06/6982fdc1054c503af88bdefeeb7c8fa8.jpg',
         writerProfile: '',
         writerNickname: '작성자1',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목1',
         boardContent: '게시물1 내용입니다.',
         likeCount: 10,
@@ -92,31 +91,30 @@ export const BOARD_LIST: IPreviewItem[] = [
         img: '',
         writerProfile: '',
         writerNickname: '작성자2',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 2
+        boardNumber: 1
     },
     {
         img: '',
         writerProfile: '',
         writerNickname: '작성자3',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목3',
         boardContent: '게시물3 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 3
-    },
-    {
-        img: 'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/32E9/image/BA2Qyx3O2oTyEOsXe2ZtE8cRqGk.JPG',
+        boardNumber: 1
+    },{
+        img: 'http://image.dongascience.com/Photo/2022/06/6982fdc1054c503af88bdefeeb7c8fa8.jpg',
         writerProfile: '',
         writerNickname: '작성자1',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목1',
         boardContent: '게시물1 내용입니다.',
         likeCount: 10,
@@ -128,31 +126,30 @@ export const BOARD_LIST: IPreviewItem[] = [
         img: '',
         writerProfile: '',
         writerNickname: '작성자2',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 2
+        boardNumber: 1
     },
     {
         img: '',
         writerProfile: '',
         writerNickname: '작성자3',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목3',
         boardContent: '게시물3 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 3
-    },
-    {
-        img: 'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/32E9/image/BA2Qyx3O2oTyEOsXe2ZtE8cRqGk.JPG',
+        boardNumber: 1
+    },{
+        img: 'http://image.dongascience.com/Photo/2022/06/6982fdc1054c503af88bdefeeb7c8fa8.jpg',
         writerProfile: '',
         writerNickname: '작성자1',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목1',
         boardContent: '게시물1 내용입니다.',
         likeCount: 10,
@@ -164,31 +161,30 @@ export const BOARD_LIST: IPreviewItem[] = [
         img: '',
         writerProfile: '',
         writerNickname: '작성자2',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 2
+        boardNumber: 1
     },
     {
         img: '',
         writerProfile: '',
         writerNickname: '작성자3',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목3',
         boardContent: '게시물3 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 3
-    },
-    {
-        img: 'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/32E9/image/BA2Qyx3O2oTyEOsXe2ZtE8cRqGk.JPG',
+        boardNumber: 1
+    },{
+        img: 'http://image.dongascience.com/Photo/2022/06/6982fdc1054c503af88bdefeeb7c8fa8.jpg',
         writerProfile: '',
         writerNickname: '작성자1',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목1',
         boardContent: '게시물1 내용입니다.',
         likeCount: 10,
@@ -200,31 +196,30 @@ export const BOARD_LIST: IPreviewItem[] = [
         img: '',
         writerProfile: '',
         writerNickname: '작성자2',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 2
+        boardNumber: 1
     },
     {
         img: '',
         writerProfile: '',
         writerNickname: '작성자3',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목3',
         boardContent: '게시물3 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 3
-    },
-    {
-        img: 'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/32E9/image/BA2Qyx3O2oTyEOsXe2ZtE8cRqGk.JPG',
+        boardNumber: 1
+    },{
+        img: 'http://image.dongascience.com/Photo/2022/06/6982fdc1054c503af88bdefeeb7c8fa8.jpg',
         writerProfile: '',
         writerNickname: '작성자1',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목1',
         boardContent: '게시물1 내용입니다.',
         likeCount: 10,
@@ -236,31 +231,30 @@ export const BOARD_LIST: IPreviewItem[] = [
         img: '',
         writerProfile: '',
         writerNickname: '작성자2',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 2
+        boardNumber: 1
     },
     {
         img: '',
         writerProfile: '',
         writerNickname: '작성자3',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목3',
         boardContent: '게시물3 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 3
-    },
-    {
-        img: 'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/32E9/image/BA2Qyx3O2oTyEOsXe2ZtE8cRqGk.JPG',
+        boardNumber: 1
+    },{
+        img: 'http://image.dongascience.com/Photo/2022/06/6982fdc1054c503af88bdefeeb7c8fa8.jpg',
         writerProfile: '',
         writerNickname: '작성자1',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목1',
         boardContent: '게시물1 내용입니다.',
         likeCount: 10,
@@ -272,31 +266,30 @@ export const BOARD_LIST: IPreviewItem[] = [
         img: '',
         writerProfile: '',
         writerNickname: '작성자2',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 2
+        boardNumber: 1
     },
     {
         img: '',
         writerProfile: '',
         writerNickname: '작성자3',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목3',
         boardContent: '게시물3 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 3
-    },
-    {
-        img: 'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/32E9/image/BA2Qyx3O2oTyEOsXe2ZtE8cRqGk.JPG',
+        boardNumber: 1
+    },{
+        img: 'http://image.dongascience.com/Photo/2022/06/6982fdc1054c503af88bdefeeb7c8fa8.jpg',
         writerProfile: '',
         writerNickname: '작성자1',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목1',
         boardContent: '게시물1 내용입니다.',
         likeCount: 10,
@@ -308,31 +301,30 @@ export const BOARD_LIST: IPreviewItem[] = [
         img: '',
         writerProfile: '',
         writerNickname: '작성자2',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 2
+        boardNumber: 1
     },
     {
         img: '',
         writerProfile: '',
         writerNickname: '작성자3',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목3',
         boardContent: '게시물3 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 3
-    },
-    {
-        img: 'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/32E9/image/BA2Qyx3O2oTyEOsXe2ZtE8cRqGk.JPG',
+        boardNumber: 1
+    },{
+        img: 'http://image.dongascience.com/Photo/2022/06/6982fdc1054c503af88bdefeeb7c8fa8.jpg',
         writerProfile: '',
         writerNickname: '작성자1',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목1',
         boardContent: '게시물1 내용입니다.',
         likeCount: 10,
@@ -344,31 +336,30 @@ export const BOARD_LIST: IPreviewItem[] = [
         img: '',
         writerProfile: '',
         writerNickname: '작성자2',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 2
+        boardNumber: 1
     },
     {
         img: '',
         writerProfile: '',
         writerNickname: '작성자3',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목3',
         boardContent: '게시물3 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 3
-    },
-    {
-        img: 'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/32E9/image/BA2Qyx3O2oTyEOsXe2ZtE8cRqGk.JPG',
+        boardNumber: 1
+    },{
+        img: 'http://image.dongascience.com/Photo/2022/06/6982fdc1054c503af88bdefeeb7c8fa8.jpg',
         writerProfile: '',
         writerNickname: '작성자1',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목1',
         boardContent: '게시물1 내용입니다.',
         likeCount: 10,
@@ -380,31 +371,31 @@ export const BOARD_LIST: IPreviewItem[] = [
         img: '',
         writerProfile: '',
         writerNickname: '작성자2',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 2
+        boardNumber: 1
     },
     {
         img: '',
         writerProfile: '',
         writerNickname: '작성자3',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목3',
         boardContent: '게시물3 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 3
+        boardNumber: 1
     },
     {
-        img: 'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/32E9/image/BA2Qyx3O2oTyEOsXe2ZtE8cRqGk.JPG',
+        img: 'http://image.dongascience.com/Photo/2022/06/6982fdc1054c503af88bdefeeb7c8fa8.jpg',
         writerProfile: '',
         writerNickname: '작성자1',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목1',
         boardContent: '게시물1 내용입니다.',
         likeCount: 10,
@@ -416,26 +407,62 @@ export const BOARD_LIST: IPreviewItem[] = [
         img: '',
         writerProfile: '',
         writerNickname: '작성자2',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목2',
         boardContent: '게시물2 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 2
+        boardNumber: 1
     },
     {
         img: '',
         writerProfile: '',
         writerNickname: '작성자3',
-        writeDate: '2023. 02. 15',
+        writeDate: '2023. 02. 15.',
         boardTitle: '게시물 제목3',
         boardContent: '게시물3 내용입니다.',
         likeCount: 10,
         commentCount: 78,
         viewCount: 543,
-        boardNumber: 3
-    }
+        boardNumber: 1
+    },
+    {
+        img: 'http://image.dongascience.com/Photo/2022/06/6982fdc1054c503af88bdefeeb7c8fa8.jpg',
+        writerProfile: '',
+        writerNickname: '작성자1',
+        writeDate: '2023. 02. 15.',
+        boardTitle: '게시물 제목1',
+        boardContent: '게시물1 내용입니다.',
+        likeCount: 10,
+        commentCount: 78,
+        viewCount: 543,
+        boardNumber: 1
+    },
+    {
+        img: '',
+        writerProfile: '',
+        writerNickname: '작성자2',
+        writeDate: '2023. 02. 15.',
+        boardTitle: '게시물 제목2',
+        boardContent: '게시물2 내용입니다.',
+        likeCount: 10,
+        commentCount: 78,
+        viewCount: 543,
+        boardNumber: 1
+    },
+    {
+        img: '',
+        writerProfile: '',
+        writerNickname: '작성자3',
+        writeDate: '2023. 02. 15.',
+        boardTitle: '게시물 제목3',
+        boardContent: '게시물3 내용입니다.',
+        likeCount: 10,
+        commentCount: 78,
+        viewCount: 543,
+        boardNumber: 1
+    },
 ];
 
 export const POPULAR_LIST: string[] = [
@@ -449,15 +476,13 @@ export const POPULAR_LIST: string[] = [
     '점심 메뉴', '저녁 메뉴', '아침 메뉴',
     '점심 메뉴', '저녁 메뉴', '아침 메뉴',
     '점심 메뉴', '저녁 메뉴', '아침 메뉴',
-    '점심 메뉴', '저녁 메뉴', '아침 메뉴',
-    '점심 메뉴', '저녁 메뉴', '아침 메뉴',
-    '점심 메뉴', '저녁 메뉴', '아침 메뉴',
-    '점심 메뉴', '저녁 메뉴', '아침 메뉴',
-    '점심 메뉴', '저녁 메뉴', '아침 메뉴',
-    '점심 메뉴', '저녁 메뉴', '아침 메뉴',
-    '점심 메뉴', '저녁 메뉴', '아침 메뉴',
-    '점심 메뉴', '저녁 메뉴', '아침 메뉴',
-    '점심 메뉴', '저녁 메뉴', '아침 메뉴',
-    '점심 메뉴', '저녁 메뉴', '아침 메뉴',
-    '점심 메뉴', '저녁 메뉴', '아침 메뉴',
 ]
+
+export const USER: IUser = {
+    email: 'qwer@qwer.com',
+    password: 'qwer1234',
+    nickname: 'jiraynor',
+    telNumber: '010-1111-2222',
+    address: '부산광역시 부산진구',
+    addressDetail: '삼정타워',
+}

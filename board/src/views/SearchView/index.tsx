@@ -1,17 +1,19 @@
-import { Box, Grid, Pagination, Typography, Stack } from '@mui/material'
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import BoardListItem from 'src/components/BoardListItem';
+
+import { Box, Grid, Pagination, Stack, Typography } from '@mui/material'
 import PopularCard from 'src/components/PopularCard'
-import usePagingHook from 'src/hooks/paging.hook';
+import { useParams } from 'react-router-dom'
 import { IPreviewItem } from 'src/interfaces';
+
 import { BOARD_LIST } from 'src/mock';
+import BoardListItem from 'src/components/BoardListItem';
 import { getPageCount } from 'src/utils';
+import { usePagingHook } from 'src/hooks';
 
 export default function SearchView() {
 
     const { content } = useParams();
-    const { boardList, viewList, pageNumber, onPageHandler, COUNT } = usePagingHook(content as string);
+    const { viewList, pageNumber, boardList, setBoardList, onPageHandler, COUNT } = usePagingHook();
 
     // const COUNT = 5;
 
@@ -34,15 +36,19 @@ export default function SearchView() {
     //     setViewList(tmpList);
     // }
 
-    // useEffect(() => {
-    //     const tmp = BOARD_LIST.filter((board) => board.boardTitle.includes(content as string))
-    //     setBoardList(tmp);
-    // }, [])
+    useEffect(() => {
+        //# array.filter(요소 => 조건)
+        //? 특정한 조건에 부합하는 요소만 모아서 새로운 배열로 만들어 반환하는 메서드
+        //# string.inclues(검색할 문자열)
+        //? 해당 문자열에서 검색할 문자열이 존재한다면 true, 아니면 false를 반환하는 메서드
+        const tmp = BOARD_LIST.filter((board) => board.boardTitle.includes(content as string));
+        setBoardList(tmp);
+    }, [content]);
 
-    // useEffect(() => {
-    //     onPageHandler(pageNumber)
-    // }, [boardList])
-    
+    // useEffect(()=> {
+    //     onPageHandler(pageNumber);
+    // }, [boardList]);
+
   return (
     <Box sx={{ p: '40px 120px', backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         <Box sx={{ fontSize: '24px', fontWeight: 500 }}>
@@ -54,7 +60,7 @@ export default function SearchView() {
             <Grid container spacing={3}>
                 <Grid item sm={12} md={8}>
                     <Stack spacing={2}>
-                        {viewList.map((boardItem) => (<BoardListItem item={boardItem}/>))}
+                        {viewList.length === 0 ? (<Box sx={{ height: '416px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}><Typography sx={{ fontSize: '24px', fontWeight: 500, color: 'rgba(0, 0, 0, 0.4)' }}>검색결과가 없습니다.</Typography></Box>) : viewList.map((boardItem) => (<BoardListItem item={boardItem} />))}
                     </Stack>
                 </Grid>
                 <Grid item sm={12} md={4}>
@@ -63,7 +69,7 @@ export default function SearchView() {
             </Grid>
         </Box>
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-            <Pagination page={pageNumber} count={getPageCount(boardList, COUNT)} onChange={(event, value) => {onPageHandler(value)}} />
+            <Pagination page={pageNumber} count={getPageCount(boardList, COUNT)} onChange={(event, value) => onPageHandler(value)} />
         </Box>
     </Box>
   )

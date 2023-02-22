@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\board",
+    "\\board\\src",
+    "\\board\\src\\components",
+    "\\board\\src\\components\\PreviewCard",
+    "\\board\\src\\constants"
+  ],
+  "SelectedNode": "\\board\\src\\components\\PreviewCard\\index.tsx",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,4 +1,4 @@
-import { IPreviewItem, IUser } from "src/interfaces";
+import { ILikeUser, IPreviewItem, IUser } from "src/interfaces";
 
 export const TOP3: IPreviewItem[] = [
     {
@@ -486,3 +486,90 @@ export const USER: IUser = {
     address: '부산광역시 부산진구',
     addressDetail: '삼정타워',
 }
+
+export const LIKE_LIST: ILikeUser[] = [
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+    {
+        likeUserProfile: 'https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg',
+        likeUserNickname: '주코야키'
+    },
+]
